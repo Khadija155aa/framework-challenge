@@ -1,4 +1,18 @@
-/* Custom styling for the bookstore */
+/* Ensure all images are the same size */
+.book img {
+  width: 150px; /* Set a fixed width */
+  height: 200px; /* Set a fixed height */
+  object-fit: cover; /* Ensures the image fills the specified width and height without distortion */
+  border-radius: 5px;
+}
+
+/* Style for the "Our Collection" section */
+.book-list h2 {
+  text-align: center;
+  font-size: 1.8em;
+  color: #333;
+  margin-bottom: 1.5rem;
+}
 
 /* Main layout adjustments */
 body {
@@ -29,16 +43,6 @@ header h1 {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 1.5rem;
-}
-
-.book {
-  text-align: center;
-}
-
-.book img {
-  width: 100%;
-  height: auto;
-  border-radius: 5px;
 }
 
 .book h3 {
@@ -73,4 +77,5 @@ footer {
   font-size: 0.9rem;
   margin-top: 2rem;
 }
+
 
