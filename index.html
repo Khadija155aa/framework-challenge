@@ -3,49 +3,51 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Candle Maker Calendar</title>
+  <title>Bookstore</title>
+  <!-- Link to MVP.css -->
+  <link rel="stylesheet" href="https://unpkg.com/mvp.css">
+  <!-- Custom styles for the bookstore -->
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <div class="calendar-container">
-    <!-- Example month for January -->
-    <div class="month">
-      <h2>January</h2>
-      <div class="days-grid">
-        <!-- Days of the month (example) -->
-        <div class="day">1</div>
-        <div class="day special-day">2</div>
-        <div class="day">3</div>
-        <div class="day">4</div>
-        <div class="day">5</div>
-        <div class="day">6</div>
-        <div class="day">7</div>
-        <div class="day">8</div>
-        <div class="day">9</div>
-        <div class="day special-day">10</div>
-        <div class="day">11</div>
-        <div class="day">12</div>
-        <div class="day">13</div>
-        <div class="day">14</div>
-        <div class="day">15</div>
-        <!-- Add more days as needed -->
-      </div>
-    </div>
 
-    <!-- Repeat the month block for other months as needed -->
-    <div class="month">
-      <h2>February</h2>
-      <div class="days-grid">
-        <div class="day">1</div>
-        <div class="day">2</div>
-        <div class="day">3</div>
-        <div class="day special-day">4</div>
-        <!-- More days... -->
-      </div>
-    </div>
+  <!-- Navigation Bar -->
+  <header>
+    <h1>Bookstore</h1>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">Books</a>
+      <a href="#">Categories</a>
+      <a href="#">Contact</a>
+    </nav>
+  </header>
 
-    <!-- Add more months similarly to complete the calendar year -->
-  </div>
+  <!-- Main Content -->
+  <main>
+    <section class="book-list">
+      <h2>Our Collection</h2>
+      <div class="grid">
+        <article class="book">
+          <img src="book-cover.jpg" alt="Book Cover">
+          <h3>Book Title</h3>
+          <p>$19.99</p>
+          <button>Add to Cart</button>
+        </article>
+        <article class="book">
+          <img src="book-cover.jpg" alt="Book Cover">
+          <h3>Another Book</h3>
+          <p>$24.99</p>
+          <button>Add to Cart</button>
+        </article>
+        <!-- Add more books here -->
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2024 Bookstore. All rights reserved.</p>
+  </footer>
+
 </body>
 </html>
-
